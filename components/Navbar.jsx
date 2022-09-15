@@ -81,15 +81,15 @@ const Navbar = () => {
           <div className="hidden md:flex" onClick={() => {}}><Image src={images.logo02} objectFit="contain" width={32} height={32} alt="logo" /></div>
         </Link>
       </div>
-      <div className="flex flex-initial flex-row justify-end">
-        <div className="flex items-center mr-2">
+      <div className="flex flex-initial flex-row justify-end ">
+        <div className="flex items-center mr-2 ">
           <input
             type="checkbox"
-            className="checkbox"
+            className="checkbox "
             id="checkbox"
             onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
           />
-          <label htmlFor="checkbox" className="flexBetween w-8 h-4 bg-black rounded-2xl p-1 relative label">
+          <label htmlFor="checkbox" className="cursor-pointer flexBetween w-8 h-4 bg-black rounded-2xl p-1 relative label">
             <i className="fas fa-sun" />
             <i className="fas fa-moon" />
             <div className="w-3 h-3 absolute bg-white rounded-full ball" />
